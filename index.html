@@ -29,13 +29,10 @@
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="font-black text-xl tracking-tighter">KOMÍNY <span class="text-accent">MOCHAN</span></div>
             <div class="hidden md:flex space-x-6 font-medium">
-                <behold-widget feed-id="DtI6NxWwnhTcCtXZP4Mp"></behold-widget>
-                <script>
-                  (() => {
-                    const d=document,s=d.createElement("script");s.type="module";
-                    s.src="https://w.behold.so/widget.js";d.head.append(s);
-                  })();
-                </script>
+                <a href="#sluzby" class="hover:text-accent transition">Služby</a>
+                <a href="#galerie" class="hover:text-accent transition">Realizace</a>
+                <a href="#recenze" class="hover:text-accent transition">Recenze</a>
+                <a href="#kontakt" class="hover:text-accent transition">Kontakt</a>
             </div>
             <a href="tel:+420721262331" class="font-bold text-green-600 md:hidden"><i class="fas fa-phone"></i> Zavolat</a>
         </div>
@@ -78,11 +75,14 @@
     <section id="galerie" class="py-16 px-6 max-w-6xl mx-auto bg-gray-100 rounded-3xl">
         <h2 class="text-3xl font-bold text-center mb-2">Naše práce v terénu</h2>
         <p class="text-center text-gray-600 mb-10">Prohlédněte si ukázky našich realizací, čištění a vložkování.</p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <a href="#" target="_blank" class="aspect-square bg-gray-300 rounded-xl flex items-center justify-center text-gray-500 hover:bg-gray-400 transition">Foto 1</a>
-            <a href="#" target="_blank" class="aspect-square bg-gray-300 rounded-xl flex items-center justify-center text-gray-500 hover:bg-gray-400 transition">Foto 2</a>
-            <a href="#" target="_blank" class="aspect-square bg-gray-300 rounded-xl flex items-center justify-center text-gray-500 hover:bg-gray-400 transition">Foto 3</a>
-            <a href="#" target="_blank" class="aspect-square bg-gray-300 rounded-xl flex items-center justify-center text-gray-500 hover:bg-gray-400 transition">Foto 4</a>
+        <div class="flex justify-center">
+            <behold-widget feed-id="DtI6NxWwnhTcCtXZP4Mp"></behold-widget>
+            <script>
+              (() => {
+                const d=document,s=d.createElement("script");s.type="module";
+                s.src="https://w.behold.so/widget.js";d.head.append(s);
+              })();
+            </script>
         </div>
         <div class="text-center mt-8">
             <a href="https://www.facebook.com/profile.php?id=61576660653949" target="_blank" class="text-blue-600 font-bold hover:underline">Sledujte nás pro nejnovější fotky na Facebooku →</a>
