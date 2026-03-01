@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komíny Mochan | Revize, čištění a vložkování komínů</title>
+    <meta name="description" content="Profesionální kominické služby Komíny Mochan. Nabízíme revize, čištění, frézování a vložkování komínů. Rychle a bezpečně.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        .bg-kominik { background-color: #1a1a1a; }
+        .text-accent { color: #ff9800; }
+        .bg-accent { background-color: #ff9800; }
+        .btn-call { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="font-black text-xl tracking-tighter">KOMÍNY <span class="text-accent">MOCHAN</span></div>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#sluzby" class="hover:text-accent transition">Služby</a>
+                <a href="#recenze" class="hover:text-accent transition">Recenze</a>
+                <a href="#kontakt" class="hover:text-accent transition">Kontakt</a>
+            </div>
+            <a href="tel:+420721262331" class="font-bold text-green-600 md:hidden"><i class="fas fa-phone"></i> Zavolat</a>
+        </div>
+    </nav>
+
+    <section class="pt-24 pb-12 px-6 bg-kominik text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Váš komín, <span class="text-accent">naše starost</span></h1>
+            <p class="text-gray-400 text-lg mb-8">Profesionální kominictví s důrazem na bezpečnost a čistotu vašeho domova.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#kontakt" class="bg-accent text-white px-8 py-4 rounded-lg font-bold hover:bg-orange-600 transition">Nezávazná poptávka</a>
+                <a href="tel:+420721262331" class="bg-white text-black px-8 py-4 rounded-lg font-bold flex items-center justify-center">
+                    <i class="fas fa-phone mr-2"></i> +420 721 262 331
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sluzby" class="py-16 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12 italic text-gray-500">Naše služby</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition border-t-4 border-accent">
+                <i class="fas fa-clipboard-check text-4xl text-accent mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Revize komínů</h3>
+                <p class="text-gray-600">Pravidelné revize pro kolaudace, pojišťovny nebo při výměně spotřebiče.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition border-t-4 border-accent">
+                <i class="fas fa-broom text-4xl text-accent mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Čištění a kontrola</h3>
+                <p class="text-gray-600">Odstranění sazí a dehtu, prevence komínových požárů a kontrola průchodnosti.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition border-t-4 border-accent">
+                <i class="fas fa-tools text-4xl text-accent mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Vložkování a opravy</h3>
+                <p class="text-gray-600">Rekonstrukce komínů nerezovými vložkami pro moderní kotle a kamna.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="recenze" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Co o nás říkají zákazníci</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="font-bold mb-4 text-center"><i class="fab fa-google text-blue-500"></i> Google Recenze</h3>
+                    <div id="google-reviews">
+                        <p class="text-center text-gray-500 italic">"Pan Mochan přijel včas, vše vyčistil a poradil s údržbou. Maximální spokojenost!"</p>
+                        <div class="flex justify-center mt-2 text-yellow-400">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="font-bold mb-4 text-center"><i class="fab fa-facebook text-blue-700"></i> Aktuálně na Facebooku</h3>
+                    <a href="https://www.facebook.com/profile.php?id=61576660653949" target="_blank" class="block bg-blue-50 p-4 rounded text-center text-blue-700 font-bold hover:bg-blue-100 transition">
+                        Zobrazit galerii a realizace →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="py-16 px-6 max-w-4xl mx-auto">
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+            <div class="bg-accent p-12 text-white md:w-1/3">
+                <h2 class="text-3xl font-bold mb-6">Kontakt</h2>
+                <p class="mb-4"><strong>Místo působení:</strong><br>Celý kraj (dle domluvy)</p>
+                <p class="mb-4"><strong>Telefon:</strong><br>+420 721 262 331</p>
+                <p><strong>IČ:</strong><br>21915421</p>
+            </div>
+            <div class="p-12 md:w-2/3">
+                <h3 class="text-2xl font-bold mb-6">Nezávazná poptávka</h3>
+                <form action="https://formspree.io/f/MOU_EMAIL" method="POST" class="space-y-4">
+                    <input type="text" name="name" placeholder="Vaše jméno" required class="w-full p-3 bg-gray-100 rounded border-none">
+                    <input type="tel" name="phone" placeholder="Telefon" required class="w-full p-3 bg-gray-100 rounded border-none">
+                    <textarea name="message" placeholder="O co se jedná? (např. revize RD)" class="w-full p-3 bg-gray-100 rounded border-none h-32"></textarea>
+                    <button type="submit" class="w-full bg-accent text-white font-bold py-4 rounded hover:bg-orange-600 transition">ODESLAT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Komíny Mochan. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <a href="tel:+420721262331" class="btn-call fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl md:hidden z-50">
+        <i class="fas fa-phone text-2xl"></i>
+    </a>
+
+</body>
+</html>
